@@ -1,10 +1,41 @@
 ---
 title: "expquart"
-format: html
+output: 
+  html_document:
+    theme: cerulean
+    code_folding: hide
+
 ---
 
 ```{r}
 library(tidyverse)
 
+```
+
+```{r}
+wwPapers <- read.csv("../raw data/2022-12-12-pages-export.csv")
+scriptures <- read.csv("../raw data/lds-scriptures.csv")
+```
+
+```{r}
+# scriptures %>% glimpse()
+
+text <- scriptures %>% select(scripture_text) %>% unlist()
+
+text <- str_replace_all(text, "scripture_text\\d*", "")
+
+text
+
+# ?str_extract_all    b 
+
+```
+
+```{r}
+wwPapersShort <- wwPapers %>% head(1000) %>% select() %>% select(Text.Only.Transcript) %>% distinct()
+wwPapersShort
+```
+
+```{python}
+print("Hello Quarto World!!")
 ```
 
