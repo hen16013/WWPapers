@@ -13,8 +13,8 @@ library(tidyverse)
 ```
 
 ```{r}
-wwPapers <- read.csv("../raw data/2022-12-12-pages-export.csv")
-scriptures <- read.csv("../raw data/lds-scriptures.csv")
+wwPapers <- read.csv("C:/Users/LeRoy12358/Documents/School/W23/499 DS - Senior Project/WWPapers/raw data/2022-12-12-pages-export.csv")
+scriptures <- read.csv("C:/Users/LeRoy12358/Documents/School/W23/499 DS - Senior Project/WWPapers/raw data/lds-scriptures.csv")
 ```
 
 ```{r}
@@ -26,7 +26,7 @@ text <- str_replace_all(text, "scripture_text\\d*", "")
 
 text
 
-# ?str_extract_all    b 
+# ?str_extract_all
 
 ```
 
@@ -35,7 +35,20 @@ wwPapersShort <- wwPapers %>% head(1000) %>% select() %>% select(Text.Only.Trans
 wwPapersShort
 ```
 
-```{python}
-print("Hello Quarto World!!")
+<!-- # ```{python} -->
+<!-- # print("Hello Quarto World!!") -->
+<!-- ``` -->
+
+```{r}
+pacman::p_load("rvest")
+
+articles <- c()
+
+articles <- articles %>% append(read_html("https://scriptures.byu.edu/#:t3d092:p573"))
+articles <- articles %>% append(read_html("https://scriptures.byu.edu/#:t3a99c:p573"))
+
+articles
+# articles[1]
 ```
+
 
