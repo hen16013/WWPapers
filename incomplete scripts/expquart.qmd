@@ -31,13 +31,13 @@ text
 ```
 
 ```{r}
-wwPapersShort <- wwPapers %>% head(1000) %>% select() %>% select(Text.Only.Transcript) %>% distinct()
+wwPapersShort <- wwPapers %>% head(1000) %>% select(Text.Only.Transcript) %>% distinct()
 wwPapersShort
 ```
 
-<!-- # ```{python} -->
-<!-- # print("Hello Quarto World!!") -->
-<!-- ``` -->
+```{python}
+print("Hello Quarto World!!")
+```
 
 ```{r}
 pacman::p_load("rvest")
@@ -45,10 +45,79 @@ pacman::p_load("rvest")
 articles <- c()
 
 articles <- articles %>% append(read_html("https://scriptures.byu.edu/#:t3d092:p573"))
-articles <- articles %>% append(read_html("https://scriptures.byu.edu/#:t3a99c:p573"))
+# articles <- articles %>% append(read_html("https://scriptures.byu.edu/#:t3a99c:p573"))
 
 articles
 # articles[1]
+
+mypiece <- read_html("https://scriptures.byu.edu/#:t3d092:p573")
+```
+
+```{r}
+typeof(mypiece)
+names(mypiece)
+tmp <- mypiece['node']
+tmp
+mypiece
+
+mypiece %>% html_element("title") %>% html_text()
+mypiece %>% html_element("body") %>% html_text()
+mypiece %>% html_nodes("head") %>% html_text()
+
+?html_element
+
+html_elements(mypiece)
+
+mypiece %>% html_nodes('div[id="v25n7"]') %>% html_text()
+mypiece %>% html_nodes("html") %>% html_text()
+mypiece %>% html_nodes("*") %>% html_text()
+
+myString <- mypiece %>% html_element("body") %>% html_text()
+myString2 <- mypiece %>% html_nodes("head") %>% html_text()
+myString3 <- mypiece %>% html_nodes("*") %>% html_text()
+
+
+
+myString
+```
+
+```{r}
+fileConn<-file("output.txt")
+# writeLines(myString, fileConn)
+# writeLines(myString2, fileConn)
+writeLines(myString3, fileConn)
+close(fileConn)
+```
+
+```{r}
+mypiece %>% 
+  html_nodes("*") %>% 
+  html_nodes("*") %>% 
+  html_attr("class")
+
+mypiece %>% html_nodes(xpath = '//*[@id=/"jContent/"]') %>% html_text()
+
+mypiece %>% html_text()
+
+read_html("https://scriptures.byu.edu/#:t3d092:p573") %>% html_text()
+
+
+```
+
+
+```{r}
+pacman::p_load(tidyverse)
+
+content <- read_html("https://scriptures.byu.edu/#:t3d092:p573")
+
+content
+```
+
+```{r}
+# install.packages("RSelenium")
+library(RSelenium)
+
+
 ```
 
 
