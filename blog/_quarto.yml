@@ -10,6 +10,10 @@ website:
         href: https://github.com/
       - icon: twitter
         href: https://twitter.com
+      - icon: linkedin
+        href: https://linkedin.com
+  site-url: https://myblogexample.io
+  description: Data Science blog
 format:
   html:
     theme: morph
