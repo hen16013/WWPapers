@@ -2,7 +2,7 @@
 title: "Difflib and My Attempt to Apply It"
 author: "Ephraim Henrichsen"
 # date: "2023-04-16"
-categories: [difflib][UnReferenced Scripture][Custom][Plagiarism]
+categories: [difflib, UnReferenced Scripture, Custom, Plagiarism]
 ---
 
 Difflib is a library designed to help users deal with differences in strings - quantifying differences, identifying similarities, etc.

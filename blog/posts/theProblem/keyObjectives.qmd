@@ -2,7 +2,7 @@
 title: "Problem Description"
 author: "Ephraim Henrichsen"
 # date: "2023-04-16"
-categories: [Initial Post][UnReferenced Scripture][Custom][Plagiarism]
+categories: [Initial Post, UnReferenced Scripture, Custom, Plagiarism]
 ---
 
 The specific problem I was trying to solve with this project was to build a custom plagiarism checker - checking for plagiarism of specific documents as opposed to checking for any plagiarism whatsoever as basic plagiarism checkers online would do.
