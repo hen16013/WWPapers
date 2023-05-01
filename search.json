@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Plagiarism Detection",
+    "section": "",
+    "text": "Difflib and My Attempt to Apply It\n\n\n\n\n\n\n\ndifflib\n\n\nUnReferenced Scripture\n\n\nCustom\n\n\nPlagiarism\n\n\n\n\n\n\n\n\n\n\n\nEphraim Henrichsen\n\n\n\n\n\n\n\n\nProblem Description\n\n\n\n\n\n\n\nInitial Post\n\n\nUnReferenced Scripture\n\n\nCustom\n\n\nPlagiarism\n\n\n\n\n\n\n\n\n\n\n\nEphraim Henrichsen\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/difflib/difflib.html",
+    "href": "posts/difflib/difflib.html",
+    "title": "Difflib and My Attempt to Apply It",
+    "section": "",
+    "text": "Difflib is a library designed to help users deal with differences in strings - quantifying differences, identifying similarities, etc.\nThere’s a function in it called get_longest_match which is supposed to get the longest match between two strings. So if I give it the strings: “The cat sat on the mat.” and “The dog did not sit on the mat.” it should find the match ” on the mat.”\nThough there are other matches, that is the match that is the longest and hence the one it should find.\nYou may have noticed I said it’s “supposed to” get the longest match, instead of saying that it does. That’s because it didn’t work when I tried it.\nIt works on many strings, but some strings break it for some reason.\n\nIn my attempts to solve the unreferenced scripture problem, I scraped some data from scriptures.byu.edu, scraping some speeches (about 40) given by Wilford Woodruff and using their pre-identified places where he’s citing scripture to compare his words with the words in scripture he’s referencing, and programmatically looking through his journal entries to find places where he uses similar phrasing. This tactic obviously wouldn’t find all of the places he cites scripture, but it should at least work fairly well to find places he refers in his journal to something he later refers to in a discourse of his.\nUnfortunately, this tactic did not work. It found zero matches for some reason.\nI believe based on my debugging attempts that difflib’s get_matching_blocks function does not work as advertised on all strings, though I’d have to trawl through the source code to investigate why and potentially fix it. It was not identifying matches that I could clearly see were there, though I suppose it could also be due to character encoding issues. Or to a bug in my code.\nThis merits further research, though I should probably carefully check my code to see if it’s doing what I think it’s doing."
+  },
+  {
+    "objectID": "posts/theProblem/keyObjectives.html",
+    "href": "posts/theProblem/keyObjectives.html",
+    "title": "Problem Description",
+    "section": "",
+    "text": "The specific problem I was trying to solve with this project was to build a custom plagiarism checker - checking for plagiarism of specific documents as opposed to checking for any plagiarism whatsoever as basic plagiarism checkers online would do.\nWhen Wilford Woodruff was writing in his journal, he frequently referred to scripture without explicitly citing it. There’s significant value in being able to identify where he was and wasn’t referencing scripture. Hence the project.\nThere are some speeches given by Wilford Woodruff with many unreferenced scriptures already referenced, so that seems like a good place to start an investigation."
+  }
+]
