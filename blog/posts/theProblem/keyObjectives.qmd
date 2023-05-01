@@ -1,0 +1,12 @@
+---
+title: "Problem Description"
+author: "Ephraim Henrichsen"
+# date: "2023-04-16"
+categories: [Initial Post][UnReferenced Scripture][Custom][Plagiarism]
+---
+
+The specific problem I was trying to solve with this project was to build a custom plagiarism checker - checking for plagiarism of specific documents as opposed to checking for any plagiarism whatsoever as basic plagiarism checkers online would do.
+
+When Wilford Woodruff was writing in his journal, he frequently referred to scripture without explicitly citing it. There's significant value in being able to identify where he was and wasn't referencing scripture. Hence the project.
+
+There are some speeches given by Wilford Woodruff with many unreferenced scriptures already referenced, so that seems like a good place to start an investigation.
