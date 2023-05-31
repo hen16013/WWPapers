@@ -1,7 +1,7 @@
 ---
 title: "Cosine Similarity"
 author: "Ephraim Henrichsen"
-# date: "2023-05-31"
+# date: "2023-04-16"
 categories: [Cosine Similarity , UnReferenced Scripture, Custom, Plagiarism]
 ---
 
