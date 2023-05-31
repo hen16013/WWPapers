@@ -11,7 +11,7 @@
     "href": "index.html",
     "title": "Plagiarism Detection",
     "section": "",
-    "text": "Difflib and My Attempt to Apply It\n\n\n\n\n\n\n\ndifflib\n\n\nUnReferenced Scripture\n\n\nCustom\n\n\nPlagiarism\n\n\n\n\n\n\n\n\n\n\n\nEphraim Henrichsen\n\n\n\n\n\n\n\n\nProblem Description\n\n\n\n\n\n\n\nInitial Post\n\n\nUnReferenced Scripture\n\n\nCustom\n\n\nPlagiarism\n\n\n\n\n\n\n\n\n\n\n\nEphraim Henrichsen\n\n\n\n\n\n\nNo matching items"
+    "text": "Cosine Similarity\n\n\n\n\n\n\n\nCosine Similarity\n\n\nUnReferenced Scripture\n\n\nCustom\n\n\nPlagiarism\n\n\n\n\n\n\n\n\n\n\n\nEphraim Henrichsen\n\n\n\n\n\n\n\n\nDifflib and My Attempt to Apply It\n\n\n\n\n\n\n\ndifflib\n\n\nUnReferenced Scripture\n\n\nCustom\n\n\nPlagiarism\n\n\n\n\n\n\n\n\n\n\n\nEphraim Henrichsen\n\n\n\n\n\n\n\n\nProblem Description\n\n\n\n\n\n\n\nInitial Post\n\n\nUnReferenced Scripture\n\n\nCustom\n\n\nPlagiarism\n\n\n\n\n\n\n\n\n\n\n\nEphraim Henrichsen\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/difflib/difflib.html",
@@ -26,5 +26,12 @@
     "title": "Problem Description",
     "section": "",
     "text": "The specific problem I was trying to solve with this project was to build a custom plagiarism checker - checking for plagiarism of specific documents as opposed to checking for any plagiarism whatsoever as basic plagiarism checkers online would do.\nWhen Wilford Woodruff was writing in his journal, he frequently referred to scripture without explicitly citing it. There’s significant value in being able to identify where he was and wasn’t referencing scripture. Hence the project.\nThere are some speeches given by Wilford Woodruff with many unreferenced scriptures already referenced, so that seems like a good place to start an investigation."
+  },
+  {
+    "objectID": "posts/cosineSimilarity/cosineSimilarity.html",
+    "href": "posts/cosineSimilarity/cosineSimilarity.html",
+    "title": "Cosine Similarity",
+    "section": "",
+    "text": "Another method to detect similarity in meaning between strings is called Cosine Similarity.\nThis basically involves converting the phrases to be compared into vectors (by some mathematical voodoo) and then comparing the angle between them. Comparing the angle only and not distance or something because the angle has been found to correlate more highly with similar meanings than the distance - some similar phrases can have very similar directions and very different magnitudes.\nThe angles are compared by taking the cosine of the angle between them, which can be computed mathematically fairly simply and ranges from 1 to -1, with 1 signifying identical meanings and -1 signifying exactly opposite meanings."
   }
 ]

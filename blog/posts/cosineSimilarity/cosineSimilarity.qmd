@@ -1,0 +1,12 @@
+---
+title: "Cosine Similarity"
+author: "Ephraim Henrichsen"
+# date: "2023-05-31"
+categories: [Cosine Similarity , UnReferenced Scripture, Custom, Plagiarism]
+---
+
+Another method to detect similarity in meaning between strings is called Cosine Similarity.
+
+This basically involves converting the phrases to be compared into vectors (by some mathematical voodoo) and then comparing the angle between them. Comparing the angle only and not distance or something because the angle has been found to correlate more highly with similar meanings than the distance - some similar phrases can have very similar directions and very different magnitudes.
+
+The angles are compared by taking the cosine of the angle between them, which can be computed mathematically fairly simply and ranges from 1 to -1, with 1 signifying identical meanings and -1 signifying exactly opposite meanings.

@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/cosineSimilarity/cosineSimilarity.html",
       "/posts/difflib/difflib.html",
       "/posts/theProblem/keyObjectives.html"
     ]
